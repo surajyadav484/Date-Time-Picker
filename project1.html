@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Date and Time</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <div class="container">
+        <div class=" my-4 text-light">
+            <h1 class="text-center"><span class=" badge badge-secondary">Find Date and Time</span></h1> 
+            <div class="float-right p-4 mb-3">
+                <div class="input-group ">
+                    <div class="input-group-prepend ">
+                        <label class="input-group-text" for="inputGroupSelect01">City</label>
+                    </div>
+                    <select  id="cityList">
+                        <option value="+5.5" selected>Bombay</option>
+                        <option value="+0">London</option>
+                        <option value="+1">Berlin</option>
+                        <option value="+1">Madrid</option>
+                        <option value="+1">Paris</option>
+                        <option value="+1">Rome</option>
+                        <option value="+8">Singapore</option>
+                        <option value="-7">Los Angeles</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="my-4 p-4">
+                <span class="badge badge-danger p-4 text-light" id="currentCity"></span><br>
+                
+               
+            </div>
+            <div class="row mb-4" >
+                <div class="col-sm" >
+            <div class="card text-center pt-4 bg-color" style="width: 20rem;height: 50vh; ">               
+                <div class="card-body">
+                  <h4 class="card-title">Current Date</h4> <br> <br>
+                  <h5 id="month"></h5><sup>mm</sup> <strong >:</strong>  <h5 id="date"></h5><sup>dd</sup> <strong >:</strong> <h5 id="year"></h5><sup>yyyy</sup>
+                </div>
+              </div>
+              </div>
+              
+              
+              <div class="col-sm">
+              <div class="card text-center pt-4 bg-color" style="width: 21rem;height: 50vh; ">               
+                <div class="card-body">
+                  
+                  <h4 class="card-title">Current Time</h4> <br> <br>
+                </h3> <h5 id="hrs"></h5><sup>hrs</sup> <strong>:</strong>  <h5 id="mins"></h5><sup>mins</sup> <strong>:</strong> <h5 id="sec"></h5><sup>sec</sup> <strong>:</strong> <h5 id="AP"></h5> 
+                </div>
+            </div>
+            </div>
+            <div class="col-sm">
+            <div class="card pt-4 text-center bg-color" style="width: 21rem;height: 50vh;">               
+                <div class="card-body">
+                  <h4 class="card-title">UTC Time</h4> <br><br>
+                </h3> <h5 id="utcHrs"></h5><sup>hrs</sup> <strong>:</strong>  <h5 id="utcMins"></h5><sup>mins</sup> <strong>:</strong> <h5 id="utcSecs"></h5><sup>sec</sup> <strong>:</strong> <h5 id="utcAP"></h5> 
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+           
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/project1.js"></script>
+
+</html>
